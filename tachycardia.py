@@ -14,11 +14,10 @@ def is_tachycardic(instr):
 
     """
     instr = instr.lower()
+    expected = "tachycardic"
     result = False
-    if instr == 'tachycardic':
+    if instr == expected:
         result = True
-    else:
-        pass
     return result
 
 
