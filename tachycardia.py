@@ -1,3 +1,6 @@
+import re
+
+
 def is_tachycardic(instr):
     """Interpret whether a string contains "tachycardic"
 
@@ -13,6 +16,7 @@ def is_tachycardic(instr):
         result (boolean): whether the string contains the word
 
     """
+    instr = "".join(re.findall(r'[A-Za-z]', instr))
     instr = instr.lower()
     expected = "tachycardic"
     result = False
