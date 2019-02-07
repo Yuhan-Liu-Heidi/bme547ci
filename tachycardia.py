@@ -18,9 +18,8 @@ def is_tachycardic():
     result = False
     if instr == 'tachycardic':
         result = True
-        exit()
     else:
-        pass
+        pass    
     return result
 
 
