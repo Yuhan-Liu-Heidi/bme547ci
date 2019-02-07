@@ -1,4 +1,4 @@
-def is_tachycardic():
+def is_tachycardic(instr):
     """Interpret whether a string contains "tachycardic"
 
     This function decides if an input from OCR record contains
@@ -13,7 +13,6 @@ def is_tachycardic():
         result (boolean): whether the string contains the word
 
     """
-    instr = input("Input OCR record: ")
     instr = instr.lower()
     result = False
     if instr == 'tachycardic':
@@ -23,8 +22,22 @@ def is_tachycardic():
     return result
 
 
+def take_input():
+    """Take user input and call is_tachycardic
+
+    Args:
+        None
+
+    Returns:
+        String (str): Inputed string
+    """
+    instr = input("Input OCR record: ")
+    result = is_tachycardic(instr)
+    return result
+
+
 def main():
-    result = is_tachycardic()
+    result = take_input()
     print(result)
 
 
